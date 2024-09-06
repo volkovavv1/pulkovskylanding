@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="./global.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script
+    src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous">
+  </script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- //<?php
+    // include("input.php");
+  // ?> -->  
+  </head>
+  <body>
+    <main class="main">
+      <div class="promo">
+        <header class="header">
+          <div class="header-container">
+            <div class="logo">
+              <div class="logo-pulk">
+                <img
+                  class="logopulk-icon"
+                  alt=""
+                  src="./img/pulklogo.svg"
+                />
+              </div>
+              
+            </div>
+              <div class="close-menu"></div>
+              <nav class="header-navigation">
+                <a class="header-li" href="#participate-id">Как участвовать?</a>
+                <a class="header-li" href="#win-section__id">Призы</a>
+                <a class="header-li" href="#questions-id">Вопросы и ответы</a>
+                <a class="header-li header-li__check" href="#addcheck-id">Зарегистрировать чек</a>
+              </nav>
+          </div>
+        </header>
+        <!-- <div class="circles">
+
+          <img
+          class="bgcircle-lightgreen-icon"
+          loading="lazy"
+          alt=""
+          src="./public/border.svg"
+          />
+          <div class="bgcircle-darkgreen-parent">
+            <img
+              class="bgcircle-darkgreen-icon"
+              loading="lazy"
+              alt=""
+              src="./public/bgcircledarkgreen.svg"
+            />
+
+            <div class="bgcircle-lightgreen-big-wrapper">
+              <img
+                class="bgcircle-lightgreen-big-icon"
+                loading="lazy"
+                alt=""
+                src="./public/bgcirclelightgreen--big.svg"
+              />
+            </div>
+
+          </div>
+        </div> -->
+        <div class="promo-group">
+          <div class="logo-lavka">
+            <img
+              class="logolavka-icon"
+              loading="lazy"
+              alt=""
+              src="./img/lavkalogo.svg"
+            />
+          </div>
+          <div class="heading-group">
+            <p class="promo-date">3 сентября - 18 октября 2024</p>
+            <p class="promo-header__green">ШКОЛЬНЫЙ</p>
+
+            <div class="vibe-heading">
+              <div>
+                <img
+                  class="lightning-icon"
+                  loading="lazy"
+                  alt=""
+                  src="./img/lightning-icon.png"
+                />
+              </div>
+              <h1 class="promo-header__vibe">ВАЙБ</h1>
+              <div>
+                <img
+                  class="lightning-icon"
+                  alt=""
+                  src="./img/lightning-icon.png"
+                />
+              </div>
+            </div>
+
+            <div class="promo-participate">Участвуйте в <br> <span class="span-pink">РОЗЫГРЫШЕ</span> призов!</div>
+            <button class="registration-btn">Зарегистрировать чек</button>
+          </div>
+          <div class="promo-cake"></div>
+        </div>
+      </div>
+
+
+      <section class="participate-section" id="participate-id">
+        <div class="participate">
+        <div class="participate-wrapper">
+          <div class="heading-white participate-heading" data-aos="fade-up">Как участвовать?</div>
+          <div class="participate-container">
+          <div class="step step-one" data-aos="fade-up" data-aos-delay="150">
+            <div class="cake-image">
+              <img
+                class="cake-img"
+                alt=""
+                src="./public/participatecake@2x.png"
+              />
+              <div class="circle-yellow-group group-one">
+                <div class="circle-yellow"></div>
+                <p class="circle-text circle-text__one">1</p>
+              </div>
+            </div>
+            <p class="participate-text">
+                  Совершайте покупки в универсамах сети "Пулковский" и лавках "Daily Meal" от 1000 р.
+            </p>
+          </div>
+          <div class="step step-two" data-aos="fade-up" data-aos-delay="300">
+            <div class="smartphone-image">
+              <img
+                class="smartphone-img"
+                loading="lazy"
+                alt=""
+                src="./public/participatesmartphone@2x.png"
+              />
+              <div class="circle-yellow-group group-two">
+                <div class="circle-yellow"></div>
+                <div class="circle-text circle-text__two">2</div>
+              </div>
+            </div>   
+            <p class="participate-text participate-text__two">
+              Зарегистрируйте чек на сайте. Количество чеков 
+              <br />
+              на одного участника
+              <br />
+              не ограничено!
+            </p>
+          </div> 
+          <div class="step step-three" data-aos="fade-up" data-aos-delay="450">
+            <div class="shop-image">
+              <img
+                class="shop-img"
+                loading="lazy"
+                alt=""
+                src="./public/image-placeholder@2x.png"
+              />
+              <div class="circle-yellow-group group-three">
+                <div class="circle-yellow"></div>
+                <div class="circle-text circle-text__two">3</div>
+              </div>
+            </div>
+            <p class="participate-text participate-text__three">
+              Розыгрыш состоится 18.10.2024 на празднике
+              <br />
+              “День осеннего гостеприимства
+              <br />
+              в Пулковском”
+            </p>
+          </div>
+
+
+          <!-- <div class="button">
+                  <img
+                    class="checkmark-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./public/vector.svg"
+                  />
+
+                  <div class="div6">Зарегистрировать чек</div>
+          </div> -->
+        </div>
+      </div>
+        <div class="participate-bg">
+          <img
+            class="participate-bg-icon"
+            alt=""
+            src="./public/participatebg--purple.svg"
+          />
+        </div>
+      </div>
+      </section>
+     
+          <section class="win-section win" id="win-section__id">
+            <p class="heading-white win-heading" data-aos="fade-up">Призы</p>
+                <div class="win-container">
+                  <div class="headphones win" data-aos="fade-up" data-aos-delay="150">
+                    <div class="headphones-image">
+                      <div class="backgroundblur"></div>
+                      <img
+                        class="headphones-img"
+                        alt=""
+                        src="./img/headphones.webp"
+                      />
+                    </div>
+                    <div class="description">
+                      <b class="win-heading__yellow">НАУШНИКИ</b>
+                      <p class="win-text">
+                        Наушники беспроводные A4TECH Bloody MH390
+                      </p>
+                    </div>
+                  </div>
+
+
+                  <div class="basket-win win" data-aos="fade-up" data-aos-delay="300">
+                    <div class="basket-image">
+                      <div class="backgroundblur1"></div>
+                      <img
+                        class="basket-img"
+                        loading="lazy"
+                        alt=""
+                        src="./img/basket.png"
+                      />
+                    </div>
+
+                    <div class="description">
+                      <b class="win-heading__yellow">ПОДАРОЧНАЯ КОРЗИНА</b>
+                      <p class="win-text">Наши фирменные подарочные корзины <br> и сертификаты</p>
+                    </div>
+                  </div>
+
+
+                  <div class="ticket-win win" data-aos="fade-up" data-aos-delay="450">
+                    <div class="ticket-image">
+                      <div class="backgroundblur2"></div>
+                      <img
+                        class="ticket-img"
+                        loading="lazy"
+                        alt=""
+                        src="./img/kettle.png"
+                      />
+                    </div>
+
+                    <div class="description ticket-description">
+                      <b class="win-heading__yellow">Другие призы</b>
+                      <p class="win-text">
+                        Чайники, бытовая техника, сертификаты, подарочные наборы от
+                        наших поставщиков
+                      </p>
+                    </div>
+                  </div>
+                </div>
+          </section>
+
+          <section class="mainprize">
+            <p class="heading-white mainprize-heading" data-aos="fade-up">Главные призы</p>
+            <div class="macbook-img">
+              <div class="backgroundblur3"></div>
+              <img
+                class="macbook-icon"
+                loading="lazy"
+                alt=""
+                src="./img/nout.png"
+                data-aos="zoom-in-up"
+                data-aos-delay="150"
+              />
+            </div>
+            <p class="heading-yellow">Ноутбук DIGMA PRO Breve</p>
+
+            <!-- <div class="phone-img">
+              <div class="backgroundblur3"></div>
+              <img
+                class="macbook-icon"
+                loading="lazy"
+                alt=""
+                src="./img/phone.png"
+                data-aos="zoom-in-up"
+                data-aos-delay="150"
+              />
+            </div>
+            <p class="heading-yellow">Смартфон TECNO Spark</p>
+
+
+            <div class="phone-img">
+              <div class="backgroundblur3"></div>
+              <img
+                class="macbook-icon"
+                loading="lazy"
+                alt=""
+                src="./img/kolonka.png"
+                data-aos="zoom-in-up"
+                data-aos-delay="150"
+              />
+            </div>
+            <p class="heading-yellow">Колонка </p> -->
+          </section>
+          <section class="addcheck" id="addcheck-id">
+            <form action="" class="check-form" method="post" id="form">
+
+              <label class="check-label" for="ownerName">ФИО</label>
+              <input class="check-input" type="text" name="user_name" id="ownerName" onkeyup="validateName(document.getElementById('ownerName').value)" required>
+              <span class="error-input"></span>
+
+              <label class="check-label" for="phoneNumber">Номер телефона. Мы свяжемся с вами по нему и сообщим о выигрыше!</label>
+              <input class="check-input" type="tel" name="phone" id="phoneNumber" required>
+              <span class="error-input"></span>
+              
+              <label class="check-label" for="checkNumber">Номер чека (6 цифр)</label>
+              <input class="check-input" type="text" name="receiptnumber" id="checkNumber" required>
+              <span class="error-input"></span>
+
+              <label class="check-label" min="2024-09-03" max="2024-10-18" for="dateCheck">Дата совершения покупки</label>
+              <input class="check-input" type="date" name="receiptdate" id="dateCheck" required>
+              <span class="error-input"></span>
+      
+              <label class="check-label" for="sumCheck">Сумма покупки</label>
+              <input class="check-input" min="1000" step="0.01" type="number" name="receiptsum" id="sumCheck" required>
+              <span class="error-input"></span>
+
+              <div class="form-flex">
+                <label class="check-label" for="sumCheck">Соглашаюсь с <a href="https://unpul.ru/privacy/">Правилами акции</a> и <a href="https://unpul.ru/privacy/">Полbтикой конфиденциальности</a></label>
+                <input type="checkbox" class="checkbox-input" name="checkboxCheck" id="checkboxCheck" required>
+              </div>
+              
+              <button class="registration-btn check-btn" type="submit">Зарегистрировать чек</button>
+            </form>
+            
+          </section>
+
+          <section class="winners-content-wrapper" id="winners-id">
+
+            <div class="heading-white" data-aos="fade-up">Победители</div>
+
+              <div class="winners-container" data-aos="zoom-in" data-aos-delay="300">
+                <div class="winners-header">
+                  <p class="winners-text">Розыгрыш будет проведен</p>
+                  <p class="winners-text">18.10.2024</p>
+                </div>
+              </div>
+          </section>
+
+
+          <section class="questions-content-wrapper" id="questions-id">
+            <p class="heading-white questions-heading">
+              Вопросы и ответы
+            </p>
+            <div class="question-list">
+              <div class="question aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="300">
+                <div class="question-inside">Как поучаствовать в акции?
+                  <img
+                    class="arrow"
+                    loading="lazy"
+                    alt=""
+                    src="./public/imagebackground.svg"
+                  />
+                </div>
+                <div class="question-description">
+                  <p>Чтобы принять участие в акции, совершите покупку от 1000 р. в магазинах торговой сети «Пулковский» или в «лавках Daily Meal». Затем зарегистрируйте чек на нашем сайте и дождитесь подведения итогов!</p>
+                </div>
+              </div>
+              <div class="question aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="400">
+                <div class="question-inside">Как я узнаю, что выиграл приз?
+                  <img
+                    class="arrow"
+                    alt=""
+                    src="./public/imagebackground.svg"
+                  />
+                </div>
+                <div class="question-description">
+                  <p>Мы опубликуем списки победителей на нашем сайте, а также свяжемся с вами по номеру телефона, указанному при регистрации чека.</p>
+                </div>
+              </div>
+              <div class="question aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="500">
+                <div class="question-inside">Как я смогу получить свой приз?
+                  <img
+                    class="arrow"
+                    alt=""
+                    src="./public/imagebackground-2.svg"
+                  />
+                </div>
+                <div class="question-description">
+                  <p>Главный приз мы вручим на мероприятии "День гостеприимства в Пулковском". Подробнее о вариантах получения приза можно узнать в Правилах.</p>
+                </div>
+              </div>
+              <div class="question question__last aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="600">
+                <div class="question-inside">Какие сроки проведения акции?
+                <img
+                  class="arrow"
+                  alt=""
+                  src="./public/imagebackground-2.svg"
+                />
+              </div>
+                <div class="question-description">
+                  <p>Общий срок проведения Акции с 00:00ч. 03.09.2024 по 00:00ч. 18.10.2024 года.</p>
+                  <p>Срок совершения покупок и регистрации чеков для розыгрыша призов с 00:00ч. 03.09.2024 года по 23:59ч. 17.10.2024 года</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <footer class="footer">
+            <div class="footer-content">
+              <div class="logo footer-logos">
+                <div class="logo-pulk">
+                  <img
+                  class="logopulk-icon"
+                  alt=""
+                  src="./img/pulklogo.svg"
+                />
+                </div>
+                <div class="logo-lavka">
+                  <img
+                    class="logolavka-icon"
+                    loading="lazy"
+                    alt=""
+                    src="./img/lavkalogo_pink.svg"
+                  />
+                </div>
+              </div>
+              <div class="footer-links">
+                  <a
+                    class="footer-link__a"
+                    href="https://unpul.ru/privacy/"
+                    target="_blank"
+                    >Политика конфиденциальности</a
+                  >
+                  <a
+                    class="footer-link__a"
+                    href="https://unpul.ru/privacy/"
+                    target="_blank"
+                    >Правила акции</a
+                  >
+              </div>
+              <div class="footer-text__small">
+                <p>
+                  Общий срок проведения акции: с 03.08.2024 по 18.10.2024
+                  года (включая определение победителей и выдачу призов).
+                  Срок покупки акционной продукции и регистрации чеков:с
+                  03.08.2024 по 17.10.2024 года. Организатор акции ООО «Универсам «Пулковский», ИНН
+                  7810224080, https://pulkovsky.com. В акции участвует весь
+                  ассортимент. Акция действует во всех магазинах торговой
+                  сети «Пулковский» и «Daily Meal», расположенных на территории Российской
+                  Федерации. Акция действует при наличии товарного запаса в
+                  торговом зале. Количество призов ограничено. Призы могут
+                  отличаться по внешнему виду от изображений на рекламных
+                  материалах. Подробная информация о сроках проведения
+                  акции, ее организаторе, правилах ее проведения, количестве
+                  призов, сроках и порядке их получения размещена на сайте
+                  https://pulkovsky.com
+                </p>
+              </div>
+            </div>
+            <div class="telegram-logo" id="telegram">
+              <img
+                class="telegram-icon"
+                loading="lazy"
+                alt=""
+                src="./public/telegram@2x.png"
+              />
+            </div>
+          </footer>
+      </main>
+  </body>
+
+  <script src="./index.js"></script>
+  <script src="./validation.js"></script>
+  <script>
+    AOS.init()
+  </script>
+</html>
