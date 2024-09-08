@@ -29,16 +29,10 @@ document.getElementById('form').addEventListener('submit', function(e) {
 
   phoneNumber.value = phoneNumber.value.replace("+7", "")
 
-  
+  validator(ownerName.value, phoneNumber.value, checkNumber.value, dateCheck.value, sumCheck.value)
 
-  async function Mew () {
-    await validator(ownerName.value, phoneNumber.value, checkNumber.value, dateCheck.value, sumCheck.value).then(()=> {
-      if (validator === true) {
-        console.log('mew')
-      }
-    }) 
-  }
-});
+
+})
 
 if (!phoneNumber.value.includes('+7')) {
   phoneNumber.value = '+7'+ phoneNumber.value;
@@ -55,27 +49,35 @@ if (!phoneNumber.value.includes('+7')) {
   };
 
 const validator = (name, phone, number, date, sum) => {
-    validateName(name);
-    validatePhone(phone);
-    validateDate(date)
-    validateNumbers(number, sum);
-  
-    validateName ? 
-      (validatePhone ? 
-        (validateNumbers !== false ? 
-          true : false) 
-        : false) 
-      : false;
+  let validated;
+
+    let userName = validateName(name) ;
+    let userPhone = validatePhone(phone);
+    let userCheckNumber = validateNumber(number);
+    let userCheckSum = validateSum(sum);
+    let userCheckDate = validateDate(date);
+
+    if (userName && userPhone && userCheckNumber && userCheckSum && userCheckDate) {
+      // result = `${userName+userPhone+userCheckNumber+userCheckSum+userCheckDate}`
+      sendToPhp(userName, userPhone, userCheckNumber, userCheckSum, userCheckDate)
+      validated = 'yay!'
+    }
+
+      if (validated) {
+        console.log(validated)
+      }
   }
   
   function validateName(name) {
-    let regex = new RegExp("/^[a-zA-ZàáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžæÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð ,.'-]+$/u");
+    let regex = new RegExp("^[А-ЯЁ][а-яё]{0,30}(( |-)([А-ЯЁ][а-яё]{0,30})){0,2}$");
+
+    let regexTwo = new RegExp(/^[a-z ,.'-]+$/i);
   
-    if (!regex.test(name)) {
-      errorInput[0].innerHTML = "Введенные данные некорректны";
+    if (!regex.test(name) || !regexTwo.test(name)) {
+      errorInput[0].innerText = "Введенные данные некорректны";
       return false
     } else {
-      return true
+      return name
     }
   }
   
@@ -83,34 +85,66 @@ const validator = (name, phone, number, date, sum) => {
     let regex = new RegExp("^\d{9}$");
 
     if (!regex.test(phone)) {
-      errorInput[1].innerHTML = "Введенные данные некорректны";
+      errorInput[1].innerText = "Введенные данные некорректны";
       return false
     } else {
-      return true
+      return phone
     }
   }
   
-  function validateNumbers(number, sum) {
-    if (!number.toString().length === 6) {
-      errorInput[2].innerHTML = "Номер чека должен составлять 6 цифр";
-      return false
-    } else if (!sum >= 1000) {
-      errorInput[4].innerHTML = "Сумма должна быть от 1000 рублей";
+  function validateNumber(number) {
+    if (number.length !== 6 && parseInt(number, 10) !== NaN) {
+      errorInput[2].innerText = "Номер чека должен составлять 6 цифр";
       return false
     } else {
-      return true
+      return number
     }
   }
 
+
+  function validateSum(sum) {
+    if (!sum >= 1000) {
+      errorInput[4].innerText = "Сумма должна быть от 1000 рублей";
+      return false
+    } else {
+      return sum
+    }
+  }
+20241018
   function validateDate(date) {
     date = date.replace("-", "")
     let year = date.slice(0, 4);
-    let month = date.slice(5, 2);
+    let month = parseInt((date.slice(5, 2)), 10);
+    let day = parseInt((date.slice(7, 2)), 10);
     
-    if (!year==='2024' && !month.Number < 9 && !month.Number > 10) {
-      errorInput[3].innerHTML = "Некорректная дата. Введите дату от 03.09.2024 и до 17.10.2024";
+    if (!year==='2024' && !(month < 9) && !(month > 10)) {
+      errorInput[3].innerText = "Некорректная дата. Введите дату в диапазоне от 03.09.2024 до 17.10.2024";
       return false;
-    } else {
-      return true;
+    } else if (month === 10 && day > 18) {
+      errorInput[3].innerText = "Некорректная дата. Введите дату в диапазоне от 03.09.2024 до 17.10.2024";
+      return false;
+    } 
+    else {
+      return date;
     }
   }
+
+
+async function sendToPhp (userName, userPhone, userCheckNumber, userCheckSum, userCheckDate) {
+  let response = await fetch('./input.php', {
+
+    method: 'POST',
+    headers: {
+      'Content-Type': 'text/html;charset=utf-8'
+    },
+    body: {
+      "user_name" : userName.toString(),
+      "phone" : userPhone.toString(),
+      "receiptnumber" : userCheckNumber.toString(),
+      "receiptsum" : userCheckSum.toString(),
+      "receiptdate" : userCheckDate.toString(),
+    }
+  });
+  response.ok ? console.log('Успех') : ('((((')
+}
+  

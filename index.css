@@ -31,7 +31,7 @@ section {
 }
 
 .win-section {
-  margin-top: 44vw;
+  margin: 44vw 14.39vw 0 auto;
 }
 
 .win {
@@ -77,7 +77,7 @@ section {
   top: 4.42vw;
   left: 9.06vw;
   filter: blur(156px);
-  border-radius: var(--br-136xl);
+  border-radius: 8.07vw;
   background-color: var(--white);
   width: 9.688rem;
   height: 9.844rem;
@@ -134,7 +134,7 @@ section {
   top: 2.125rem;
   left: 3.875rem;
   filter: blur(156px);
-  border-radius: var(--br-181xl);
+  border-radius: 200px;
   background-color: var(--white);
   width: 18.75rem;
   height: 18.75rem;
@@ -149,7 +149,7 @@ section {
   bottom: 24.29%;
   left: 8.32%;
   filter: blur(156px);
-  border-radius: var(--br-136xl);
+  border-radius: 155px;
   background-color: var(--white);
 }
 
@@ -188,6 +188,8 @@ section {
   font-size: 3.83vw;
   margin: 0;
   color: var(--white);
+
+  text-shadow: 0 0.16vw 0.16vw rgba(0, 0, 0, 0.5);
 }
 
 .win-heading {
@@ -195,7 +197,7 @@ section {
 }
 
 .mainprize-heading {
-  padding-bottom: 20px;
+  padding-bottom: 1vw;
 }
 
 .backgroundblur3 {
@@ -203,7 +205,7 @@ section {
   top: 6.95vw;
   left: 6.3vw;
   filter: blur(156px);
-  border-radius: var(--br-181xl);
+  border-radius: 200px;
   background-color: var(--pink);
   width: 26.04vw;
   height: 26.04vw;
@@ -263,18 +265,14 @@ section {
   align-items: center;
   gap: 37px;
   box-sizing: border-box;
-  font-size: var(--promo-inter-extra-bold-7422-size);
+  font-size: 1.88vw;
 }
 
 
 .questions-content-wrapper {
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
   flex-direction: column;
-  font-size: var(--promo-inter-extra-bold-7266-size);
   width: 46.35vw;
-  padding-bottom: 0;
   padding-bottom: 10.89vw;
 }
 
@@ -302,7 +300,7 @@ section {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: var(--padding-4xl) 0 var(--padding-5xl);
+  margin: 1.35vw 0 1.33vw 0;
 }
 
 .question-description {
@@ -321,7 +319,12 @@ section {
 }
 
 .question-list {
-  font-size: var(--font-size-5xl-7);
+  font-size: 1.3vw;
+}
+
+.arrow {
+  width: 1.88vw;
+  height: 1.88vw;
 }
 
 .arrow__active {
@@ -352,31 +355,24 @@ section {
 }
 
 .footer-link__a {
-  line-height: 1.5rem;
   font-weight: 500;
-  font-size: var(--promo-inter-medium-1363-size);
+  font-size: 1vw;
   color: var(--white);
   text-decoration: none;
-}
-
-.footer-logos {
-  grid-area: "one two";
+  cursor: pointer;
 }
 
 .footer-text__small{
-  font-size: var(--promo-inter-medium-675-size);
-  line-height: 0.65rem;
+  font-size: 0.5vw;
   font-weight: 500;
   color: var(--white);
-  font-family: var(--promo-inter-medium-675);
-  text-align: left;
 }
 
 .telegram-logo {
   width: 2.29vw;
   height: 2.29vw;
   cursor: pointer;
-  margin-top: 18px;
+  margin-top: 1vw;
 }
 
 .telegram-logo > img {
@@ -394,36 +390,39 @@ section {
 }
 
 .logo-pulk {
-  background-color: var(--purple);
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 11.72vw;
   height: 3.91vw;
+  cursor: pointer;
+}
+
+.logopulk-icon {
+  width: 11.72vw;
+  height: 3.91vw;
+  cursor: pointer;
 }
 
 .logo-lavka {
   position: absolute;
   top: -5.47vw;
   left: 36.61vw;
+  cursor: pointer;
 }
 
 .logolavka-icon {
   width: 14.22vw;
   height: 3.91vw;
+  cursor: pointer;
 }
 
 .header {
   display: flex;
   max-width: 100%;
   align-self: stretch;
-  top: 0;
-  z-index: 99;
-  font-size: 14.61px;
   color: var(--white);
-  font-family: var(--promo-inter-medium-675);
   background-color: var(--purple);
 }
 
@@ -491,7 +490,7 @@ section {
   height: 8.02vw;
   padding-top: 0.68vw;
 
-  text-shadow: 9px 0px 1.2px #002B16;
+  text-shadow: 0.47vw 0px 0.06vw #002B16;
 }
 
 .promo-date {
@@ -500,19 +499,10 @@ section {
   color: var(--purple);
 }
 
-/* .bgcircle-lightgreen-icon {
-  height: 8rem;
-  width: 8rem;
-  position: absolute;
-  margin: 0;
-  left: 55.094rem;
-  border-radius: 128px;
-} */
-
 .registration-btn {
   width: 27.76vw;
   height: 6.46vw;
-  padding: 10px;
+  padding: 0.5vw;
 
   margin: 2.47vw 0 0 1.56vw;
 
@@ -522,7 +512,7 @@ section {
 
   font-weight: 800;
   font-size: 1.875vw;
-  line-height: 1.75vw;
+  line-height: 1.875vw;
 
   color: var(--white);
   background-color: var(--purple);
@@ -572,21 +562,23 @@ section {
 
   margin: 0 0.94vw; 
 
-  text-shadow: 9px 0px 1.2px #470358;
+  text-shadow: 0.47vw 0px 0.06vw #470358;
 }
 
 .span-pink {
   color: #EFBAE3;
-  text-shadow: 4px 0 1.6px #EE286F;
+  text-shadow: 0.21vw 0 0.08vw #EE286F;
 }
 
 
 .promo-cake {
   height: 46.88vw;
   width: 46.88vw;
-  background-image: url(./img/promo-cake.png);
+  background-image: url(./img/promo-cake.svg);
   background-repeat: no-repeat;
-  border-radius: 32px;
+  border-radius: 50%;
+  background-size:contain;
+  background-position:center;
 }
 
 .heading-group {
@@ -646,7 +638,7 @@ section {
 
 .participate-text__three {
   width: 23.07vw;
-  margin-top: 38px;
+ 
 }
 
 .step {
@@ -673,7 +665,7 @@ section {
 .cake-image {
   position: relative;
   width: 12.55vw;
-  height: 13.07vw;
+  height: 12.5vw;
 }
 
 .cake-img {
@@ -752,15 +744,15 @@ section {
 .shop-image {
   position: relative;
   width: 19.22vw;
-  height: 11.2vw;
+  height: 12.5vw;
 }
 
 .shop-img {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 19.22vw;
+  height: 11.5vw;
   z-index: 3;
   border-radius: 22px;
 }
@@ -792,20 +784,36 @@ section {
   z-index: 1;
 }
 
-.check-form {
-  width: 40vw;
+.addcheck {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 70vw;
   margin: 0 auto;
-  gap: 2vw;
+}
 
+.addcheck-heading {
+  margin: 0 auto 3vw auto;
+  text-align: center;
+}
+
+.check-form {
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
   font-size: 1.51vw;
   font-weight: 400;
   color: var(--white);
 }
 
+.check-label {
+  margin-left: 10px;
+}
+
 .check-input {
-  width: 40vw;
+  display: block;
+  position: static;
   height: 4vw;
 
   border-radius: 30px;
@@ -818,6 +826,8 @@ section {
   font-size: 2.3vw;
   padding: 1.5vw;
   line-height: 1.6vw;
+
+  margin-bottom: 3vw;
 }
 
 .check-input:focus {
@@ -828,7 +838,6 @@ section {
 .error-input {
   color: #751010;
   text-align: center;
-  display: none;
 }
 
 .error-input__active{
@@ -848,15 +857,498 @@ section {
 }
 
 .check-btn {
-  background-color: gray;
+  background-color: var(--gray);
+  color: rgb(51, 51, 51);
+}
+
+.check-btn:hover {
+  background-color: var(--gray);
+  color: rgb(51, 51, 51);
+}
+
+.check-form > button {
+  margin: 2.47vw auto;
+}
+
+.burger-menu,
+.promo-cake__mobile,
+.span-pink__mobile,
+.participate-section__mobile {
+  display: none;
+}
+
+.alert {
+  padding: 1.56vw;
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+
+  color: white;
+
+  margin-bottom: 4.69vw;
+  text-align: center;
+}
+
+.closebtn {
+  display: block;
+  padding-bottom: 1.56vw;
+  color: white;
+  font-weight: bold;
+  font-size: 6.88vw;
+  line-height: 6.25vw;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
   color: black;
 }
 
-.mobile-menu {
-  width: 100%;
-  height: 100%;
-  overflow-y: auto;
-  position: relative;
-  -webkit-overflow-scrolling: touch;
+.alert__good {
+  background-color: #39b65e; 
 }
+
+.alert__error {
+  background-color: #d13c3c; 
+}
+
+@media (max-width: 1024px) {
+
+
+  .logolavka-icon {
+    width: 23.63vw;
+    height: 6.49vw;
+    cursor: pointer;
+  }
+
+  .promo-date {
+    font-size: 3vw;
+    line-height: normal;
+  }
+
+  .promo-cake,
+  .promo-participate,
+  .span-pink,
+  .participate-section,
+  .backgroundblur,
+  .backgroundblur1, 
+  .backgroundblur2, 
+  .backgroundblur3 {
+    display: none;
+  }
+  
+  .burger-menu,
+  .promo-cake__mobile,
+  .span-pink__mobile {
+    display: block;
+  }
+
+  .header-navigation,
+  .win-container {
+    flex-direction: column;
+  }
+
+  .win-container,
+  .winners-content-wrapper,
+  .winners-container,
+  .questions-content-wrapper, 
+  .question-list,
+  .questions-heading,
+  .footer,
+  .footer-text__small > p {
+    width: 69vw;
+  }
+
+  .heading-white {
+    margin: 0 auto;
+    font-size: 7.17vw;
+    text-align: center;
+    width: fit-content;
+    line-height: 9.23vw;
+  }
+
+  .promo {
+    height: 110vw;
+  }
+
+  .header-container {
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 50px;
+  }
+
+  .header-navigation {
+    position: absolute;
+    top: 6.2vw;
+    right: -50px;
+    width: 31vw;
+    height: 26vw;
+
+    gap: 4vw;
+    padding-top: 6vw;
+    background-color: var(--purple);
+    display: none;
+  } 
+
+  .header-navigation__active {
+    display: flex;
+  }
+
+  .header-li {
+    font-size: 2vw;
+  }
+
+  .header-li:hover {
+    color: black;
+  }
+
+  .burger-menu{
+    width: 4.62vw;
+    height: 4.62vw;
+  } 
+
+  .logo-pulk,
+  .logopulk-icon {
+    width: 19vw;
+    height: 6.5vw;
+    cursor: pointer;
+  }
+
+  .promo-group,
+  .heading-group{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-lavka {
+    display: none;
+  }
+
+  .promo-group {
+    width: 53.42vw;
+    margin: 3.5vw auto 0 auto;
+  }
+
+  .heading-group{
+    height: 100%;
+  }
+
+  .promo-header__green,
+  .promo-header__vibe {
+    font-size: 6.3vw;
+    text-align: center;
+  }
+
+  .promo-header__green {
+    padding-top: 2.03vw;
+    color: var(--white);
+    text-shadow: 0 0 0.86vw #414141;
+  }
+
+  .promo-header__vibe{
+    color: #FFD7E8;
+    text-shadow: 0 0 0.44vw #EB58C2;
+  }
+
+  .vibe-heading {
+    width: 24.93vw;
+  }
+
+  .promo-header__green,
+  .promo-header__vibe,
+  .vibe-heading {
+    text-align: center;
+  }
+
+  .promo-cake__mobile {
+    height: 46.15vw;
+    width: 46.15vw;
+    background-image: url(./img/promo-cake.svg);
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-size:contain;
+    background-position:center;
+  }
+
+  .span-pink__mobile {
+    color: #ffffff;
+    text-shadow: 0 0 1.35vw #b97993;
+    font-size: 4vw;
+    padding-top: 4vw;
+  }
+
+  .participate-section__mobile,
+  .participate-container {
+    flex-direction: column;
+    gap: 7.32vw;
+    margin: 0 auto;
+  }
+
+  .participate-section__mobile {
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: 74.22vw;
+    height: 77.64vw;
+    margin-top: 7.32vw;
+    padding-bottom: 0;
+  }
+
+  .participate-container {
+    justify-content: start;
+    width: 69.16vw;
+    height: 60.16vw;
+  }
+
+  .step {
+    flex-direction: row;
+    height: fit-content;
+    width: 100%;
+    margin: 0;
+    justify-content: space-between;
+  }
+
+  .registration-btn {
+    font-size: 2.5vw;
+    line-height: normal;
+    width: 38.46vw;
+
+    margin: 2.47vw auto;
+  }
+
+  .participate-text {
+    margin: 0;
+    font-size: 2.73vw;
+    width: 55.96vw;
+  }
+
+  .circle-yellow-group {
+    position: relative;
+    width: 9.23vw;
+    height: 9.23vw;
+    left: 0;
+    bottom: 0;
+  }
+
+  .circle-yellow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .circle-text{
+    font-size: 6.25vw;
+    top: 1vw;
+    line-height: normal;
+    height: 6vw;
+    width: fit-content;
+  }
+
+  .circle-text__one {
+    left: 2.7vw;
+  }
+
+  .circle-text__two {
+    top: 0.8vw;
+    left: 2.4vw;
+  }
+
+  .circle-text__three {
+    left: 2.4vw;
+  }
+
+  .win {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    gap: 3.42vw;
+  }
+
+  .win-section {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .description {
+    align-items: start;
+    width: 70%;
+  }
+
+  .win-heading__yellow {
+    font-size: 3.13vw;
+    line-height: normal;
+    text-align: left;
+    width: 100%;
+  }
+
+  .win-text {
+    font-size: 2.73vw;
+    width: 100%;
+    text-align: left;
+  }
+
+  .headphones-image,
+  .basket-image,
+  .ticket-image,
+  .headphones-img,
+  .basket-img,
+  .ticket-img {
+    position: static;
+  }
+
+  .headphones,
+  .ticket-win {
+    padding: 0; 
+  }
+
+  .headphones-image,
+  .ticket-image {
+    height: 19.53vw;
+  }
+
+  .headphones-img,
+  .ticket-img {
+    height: 100%;
+    width: 100%;
+    transform: none;
+  }
+
+  .headphones-image {
+    width: 14.55vw;
+  }
+
+  .basket-image {
+    height: 24.41vw;
+    width: 17.68vw;
+  }
+
+  .ticket-image {
+    width: 13.97vw;
+  }
+
+  .basket-win {
+    gap: 0;
+  }
+
+  .basket-img {
+    height: 100%;
+    width: 100%;
+    transform: translateX(-1.95vw);
+  }
+
+  .win-heading {
+    height: fit-content;
+    padding-bottom: 0;
+  }
+
+  .winners-content-wrapper {
+    padding-bottom: 20vw;
+  }
+
+  .check-form  {
+    margin-top: 7vw;
+    width: 100%;
+    font-size: 2.73vw;
+  }
+
+  .check-input {
+    margin-bottom: 5vw;
+    font-size: 2.73vw;
+    margin-bottom: 1.5vw;
+  }
+
+  .checkbox-input {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .questions-content-wrapper {
+    padding-bottom: 20vw;
+  }
+
+  .winners-text,
+  .question-inside,
+  .question-description {
+    font-size: 2.73vw;
+  }
+
+  .form-flex {
+    justify-content: space-between;
+    width: 58vw;
+  }
+
+  .check-label {
+    width: 60vw;
+  }
+
+  .winners-container {
+    height: 35vw;
+  }
+
+  .questions-heading {
+    padding: 5vw 0;
+  }
+
+  .arrow {
+    width: 3.32vw;
+    height: 3.32vw;
+  }
+
+  .question-description {
+    height: fit-content;
+    line-height: normal;
+  }
+
+  .telegram-logo {
+    width: 6.35vw;
+    height: 6.35vw;
+    margin: 0;
+  }
+
+  .telegram-logo > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer {
+    justify-content: space-between;
+  }
+
+  .footer-content {
+    width: 68vw;
+  }
+
+  .footer-logos {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer-text__small {
+    position: relative;
+    font-size: 1.3vw;
+    line-height: normal;
+    width: 100%;
+    height: 15vw;
+  }
+
+  .footer-text__small > p {
+    position: absolute;
+  }
+}
+
+@media (max-width: 600px) {
+  .registration-btn {
+    height: 7vw;
+    line-height: 2vw;
+  }
+}
+
+@media (max-width: 320px) {
+
+}
+
+
 

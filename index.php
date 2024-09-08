@@ -6,20 +6,21 @@
 
     <link rel="stylesheet" href="./global.css" />
     <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./carousel.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script
-    src="https://code.jquery.com/jquery-2.2.4.min.js"
-    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-    crossorigin="anonymous">
-  </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- //<?php
-    // include("input.php");
-  // ?> -->  
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <?php
+     include("input.php");
+     ?> 
   </head>
   <body>
     <main class="main">
@@ -36,42 +37,17 @@
               </div>
               
             </div>
-              <div class="close-menu"></div>
               <nav class="header-navigation">
                 <a class="header-li" href="#participate-id">Как участвовать?</a>
                 <a class="header-li" href="#win-section__id">Призы</a>
                 <a class="header-li" href="#questions-id">Вопросы и ответы</a>
                 <a class="header-li header-li__check" href="#addcheck-id">Зарегистрировать чек</a>
               </nav>
+              <svg fill="#FFFFFF" class="burger-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                <path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/>
+              </svg>
           </div>
         </header>
-        <!-- <div class="circles">
-
-          <img
-          class="bgcircle-lightgreen-icon"
-          loading="lazy"
-          alt=""
-          src="./public/border.svg"
-          />
-          <div class="bgcircle-darkgreen-parent">
-            <img
-              class="bgcircle-darkgreen-icon"
-              loading="lazy"
-              alt=""
-              src="./public/bgcircledarkgreen.svg"
-            />
-
-            <div class="bgcircle-lightgreen-big-wrapper">
-              <img
-                class="bgcircle-lightgreen-big-icon"
-                loading="lazy"
-                alt=""
-                src="./public/bgcirclelightgreen--big.svg"
-              />
-            </div>
-
-          </div>
-        </div> -->
         <div class="promo-group">
           <div class="logo-lavka">
             <img
@@ -103,8 +79,9 @@
                 />
               </div>
             </div>
-
+            <div class="promo-cake__mobile"></div>
             <div class="promo-participate">Участвуйте в <br> <span class="span-pink">РОЗЫГРЫШЕ</span> призов!</div>
+            <span class="span-pink__mobile">РОЗЫГРЫШ ПРИЗОВ!</span>
             <button class="registration-btn">Зарегистрировать чек</button>
           </div>
           <div class="promo-cake"></div>
@@ -175,18 +152,6 @@
               в Пулковском”
             </p>
           </div>
-
-
-          <!-- <div class="button">
-                  <img
-                    class="checkmark-icon"
-                    loading="lazy"
-                    alt=""
-                    src="./public/vector.svg"
-                  />
-
-                  <div class="div6">Зарегистрировать чек</div>
-          </div> -->
         </div>
       </div>
         <div class="participate-bg">
@@ -195,6 +160,40 @@
             alt=""
             src="./public/participatebg--purple.svg"
           />
+        </div>
+      </div>
+      </section>
+      
+
+      <section class="participate-section__mobile">
+        <div class="heading-white" data-aos="fade-up">Как участвовать?</div>
+        <div class="participate-container">
+        <div class="step" data-aos="fade-up" data-aos-delay="150">
+            <div class="circle-yellow-group">
+              <div class="circle-yellow"></div>
+              <p class="circle-text circle-text__one">1</p>
+            </div>
+          <p class="participate-text">
+                Совершайте покупки в универсамах сети "Пулковский" и лавках "Daily Meal" от 1000 р.
+          </p>
+        </div>
+        <div class="step" data-aos="fade-up" data-aos-delay="300">
+            <div class="circle-yellow-group">
+              <div class="circle-yellow"></div>
+              <div class="circle-text circle-text__two">2</div>
+            </div>   
+          <p class="participate-text">
+            Зарегистрируйте чек на сайте. Количество чеков на одного участника не ограничено!
+          </p>
+        </div> 
+        <div class="step" data-aos="fade-up" data-aos-delay="450">
+            <div class="circle-yellow-group">
+              <div class="circle-yellow"></div>
+              <div class="circle-text circle-text__three">3</div>
+            </div>
+          <p class="participate-text">
+            Розыгрыш состоится 18.10.2024 на празднике “День осеннего гостеприимства в Пулковском”
+          </p>
         </div>
       </div>
       </section>
@@ -233,7 +232,7 @@
 
                     <div class="description">
                       <b class="win-heading__yellow">ПОДАРОЧНАЯ КОРЗИНА</b>
-                      <p class="win-text">Наши фирменные подарочные корзины <br> и сертификаты</p>
+                      <p class="win-text">Наши фирменные подарочные корзины и сертификаты</p>
                     </div>
                   </div>
 
@@ -262,7 +261,7 @@
 
           <section class="mainprize">
             <p class="heading-white mainprize-heading" data-aos="fade-up">Главные призы</p>
-            <div class="macbook-img">
+            <!-- <div class="macbook-img">
               <div class="backgroundblur3"></div>
               <img
                 class="macbook-icon"
@@ -272,8 +271,62 @@
                 data-aos="zoom-in-up"
                 data-aos-delay="150"
               />
-            </div>
-            <p class="heading-yellow">Ноутбук DIGMA PRO Breve</p>
+            </div> -->
+            <!-- <p class="heading-yellow">Ноутбук DIGMA PRO Breve</p> -->
+
+            <div class="carousel-container">
+              <div class="carousel">
+                <div class="carousel-slide">
+                  <div class="macbook-img">
+                    <img
+                      class="macbook-icon"
+                      loading="lazy"
+                      alt=""
+                      src="./img/nout.png"
+                      data-aos="zoom-in-up"
+                      data-aos-delay="150"
+                    />
+                  </div>
+                  <div class="mainprize-desc">
+                    <p class="heading-yellow"></p>
+                    <p class="mainprize-text"></p>
+                  </div>
+                </div>
+                  <div class="carousel-slide">
+                    <div class="macbook-img">
+                      <img
+                        class="macbook-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./img/phone.png"
+                        data-aos="zoom-in-up"
+                        data-aos-delay="150"
+                      />
+                    </div>
+                    <div class="mainprize-desc"></div>
+                      <p class="heading-yellow"></p>
+                      <p class="mainprize-text"></p>
+                    </div>
+                    <div class="carousel-slide">
+                      <div class="macbook-img">
+                        <img
+                          class="macbook-icon"
+                          loading="lazy"
+                          alt=""
+                          src="./img/kolonka.png"
+                          data-aos="zoom-in-up"
+                          data-aos-delay="150"
+                        />
+                      </div>
+                      <div class="mainprize-desc">
+                        <p class="heading-yellow"></p>
+                        <p class="mainprize-text"></p>
+                      </div>
+                    </div>
+                  </div>
+                  
+              </div>
+          </div>
 
             <!-- <div class="phone-img">
               <div class="backgroundblur3"></div>
@@ -302,14 +355,21 @@
             </div>
             <p class="heading-yellow">Колонка </p> -->
           </section>
+
           <section class="addcheck" id="addcheck-id">
+            <p class="heading-white addcheck-heading">Регистрация чека</p>
             <form action="" class="check-form" method="post" id="form">
+
+              <div class="alert">
+                <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+                Успешно!
+              </div>
 
               <label class="check-label" for="ownerName">ФИО</label>
               <input class="check-input" type="text" name="user_name" id="ownerName" onkeyup="validateName(document.getElementById('ownerName').value)" required>
               <span class="error-input"></span>
 
-              <label class="check-label" for="phoneNumber">Номер телефона. Мы свяжемся с вами по нему и сообщим о выигрыше!</label>
+              <label class="check-label" for="phoneNumber">Номер телефона. Мы свяжемся с вами и сообщим о выигрыше!</label>
               <input class="check-input" type="tel" name="phone" id="phoneNumber" required>
               <span class="error-input"></span>
               
@@ -326,13 +386,12 @@
               <span class="error-input"></span>
 
               <div class="form-flex">
-                <label class="check-label" for="sumCheck">Соглашаюсь с <a href="https://unpul.ru/privacy/">Правилами акции</a> и <a href="https://unpul.ru/privacy/">Полbтикой конфиденциальности</a></label>
+                <label class="check-label" for="sumCheck">Соглашаюсь с <a href="https://unpul.ru/privacy/">Правилами акции</a> и <a href="https://unpul.ru/privacy/">Политикой конфиденциальности</a></label>
                 <input type="checkbox" class="checkbox-input" name="checkboxCheck" id="checkboxCheck" required>
               </div>
               
-              <button class="registration-btn check-btn" type="submit">Зарегистрировать чек</button>
+              <button id="submit-btn" class="registration-btn check-btn" disabled type="submit">Зарегистрировать чек</button>
             </form>
-            
           </section>
 
           <section class="winners-content-wrapper" id="winners-id">
@@ -390,7 +449,7 @@
                   <p>Главный приз мы вручим на мероприятии "День гостеприимства в Пулковском". Подробнее о вариантах получения приза можно узнать в Правилах.</p>
                 </div>
               </div>
-              <div class="question question__last aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="600">
+              <div class="question aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="600">
                 <div class="question-inside">Какие сроки проведения акции?
                 <img
                   class="arrow"
@@ -401,6 +460,18 @@
                 <div class="question-description">
                   <p>Общий срок проведения Акции с 00:00ч. 03.09.2024 по 00:00ч. 18.10.2024 года.</p>
                   <p>Срок совершения покупок и регистрации чеков для розыгрыша призов с 00:00ч. 03.09.2024 года по 23:59ч. 17.10.2024 года</p>
+                </div>
+              </div>
+              <div class="question question__last aos-init aos-animate" data-aos="zoom-in-down" data-aos-delay="700">
+                <div class="question-inside">Моего вопроса нет в списке! Что делать?
+                <img
+                  class="arrow"
+                  alt=""
+                  src="./public/imagebackground-2.svg"
+                />
+              </div>
+                <div class="question-description">
+                  <p>Обратитесь к нам по номеру телефона +7 911 777-77-77 или по адресу эл. почты unpul@unpul.ru. Мы обязательно поможем вам!</p>
                 </div>
               </div>
             </div>
@@ -416,7 +487,7 @@
                   src="./img/pulklogo.svg"
                 />
                 </div>
-                <div class="logo-lavka">
+                <div>
                   <img
                     class="logolavka-icon"
                     loading="lazy"
@@ -467,10 +538,12 @@
               />
             </div>
           </footer>
+          
       </main>
   </body>
 
   <script src="./index.js"></script>
+  <script src="./carousel.js"></script>
   <script src="./validation.js"></script>
   <script>
     AOS.init()
