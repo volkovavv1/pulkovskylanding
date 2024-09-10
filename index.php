@@ -4,14 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="initial-scale=1, width=device-width" />
 
-    <link rel="stylesheet" href="./global.css" />
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./carousel.css" />
+    <link rel="stylesheet" href="./styles/global.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/carousel.css" />
+    <link rel="shortcut icon" href="./img/favicon.png">
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Школьный Вайб в Пулковском!</title>
     <script
       src="https://code.jquery.com/jquery-2.2.4.min.js"
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -20,15 +22,16 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <?php
      include("input.php");
-     ?> 
+     ?>
   </head>
   <body>
+    <p class="out"></p>
     <main class="main">
       <div class="promo">
         <header class="header">
           <div class="header-container">
             <div class="logo">
-              <div class="logo-pulk">
+              <div class="logo-pulk" id="logopulk-one">
                 <img
                   class="logopulk-icon"
                   alt=""
@@ -49,7 +52,7 @@
           </div>
         </header>
         <div class="promo-group">
-          <div class="logo-lavka">
+          <div class="logo-lavka" id="logolavka-one">
             <img
               class="logolavka-icon"
               loading="lazy"
@@ -99,7 +102,7 @@
               <img
                 class="cake-img"
                 alt=""
-                src="./public/participatecake@2x.png"
+                src="./img/participatecake.png"
               />
               <div class="circle-yellow-group group-one">
                 <div class="circle-yellow"></div>
@@ -116,7 +119,7 @@
                 class="smartphone-img"
                 loading="lazy"
                 alt=""
-                src="./public/participatesmartphone@2x.png"
+                src="./img/participatesmartphone.png"
               />
               <div class="circle-yellow-group group-two">
                 <div class="circle-yellow"></div>
@@ -137,7 +140,7 @@
                 class="shop-img"
                 loading="lazy"
                 alt=""
-                src="./public/image-placeholder@2x.png"
+                src="./img/image-placeholder.png"
               />
               <div class="circle-yellow-group group-three">
                 <div class="circle-yellow"></div>
@@ -158,7 +161,7 @@
           <img
             class="participate-bg-icon"
             alt=""
-            src="./public/participatebg--purple.svg"
+            src="./img/participatebg--purple.svg"
           />
         </div>
       </div>
@@ -198,7 +201,7 @@
       </div>
       </section>
      
-          <section class="win-section win" id="win-section__id">
+      <section class="win-section win" id="win-section__id">
             <p class="heading-white win-heading" data-aos="fade-up">Призы</p>
                 <div class="win-container">
                   <div class="headphones win" data-aos="fade-up" data-aos-delay="150">
@@ -251,33 +254,21 @@
                     <div class="description ticket-description">
                       <b class="win-heading__yellow">Другие призы</b>
                       <p class="win-text">
-                        Чайники, бытовая техника, сертификаты, подарочные наборы от
+                        Бытовая техника, сертификаты, подарочные наборы от
                         наших поставщиков
                       </p>
                     </div>
                   </div>
                 </div>
-          </section>
+      </section>
 
-          <section class="mainprize">
+      <section class="mainprize">
             <p class="heading-white mainprize-heading" data-aos="fade-up">Главные призы</p>
-            <!-- <div class="macbook-img">
-              <div class="backgroundblur3"></div>
-              <img
-                class="macbook-icon"
-                loading="lazy"
-                alt=""
-                src="./img/nout.png"
-                data-aos="zoom-in-up"
-                data-aos-delay="150"
-              />
-            </div> -->
-            <!-- <p class="heading-yellow">Ноутбук DIGMA PRO Breve</p> -->
-
             <div class="carousel-container">
               <div class="carousel">
                 <div class="carousel-slide">
-                  <div class="macbook-img">
+                  <div class="backgroundblur3"></div>
+                  <div class="mainprize-img">
                     <img
                       class="macbook-icon"
                       loading="lazy"
@@ -288,14 +279,21 @@
                     />
                   </div>
                   <div class="mainprize-desc">
-                    <p class="heading-yellow"></p>
-                    <p class="mainprize-text"></p>
+                    <div class="backgroundblur4"></div>
+                    <p class="heading-yellow">Ноутбук DIGMA PRO Breve</p>
+                    <ul class="mainprize-text">
+                      <li>Процессор: AMD Ryzen 5 5500U 2.1 ГГц</li>
+                      <li>Графический процессор: AMD Radeon</li>
+                      <li>Экран: 15.6 " 1920х1080 IPS</li>
+                    </ul>
                   </div>
                 </div>
+
                   <div class="carousel-slide">
-                    <div class="macbook-img">
+                    <div class="backgroundblur3"></div>
+                    <div class="mainprize-img">
                       <img
-                        class="macbook-icon"
+                        class="mainphone-icon"
                         loading="lazy"
                         alt=""
                         src="./img/phone.png"
@@ -303,70 +301,62 @@
                         data-aos-delay="150"
                       />
                     </div>
-                    <div class="mainprize-desc"></div>
-                      <p class="heading-yellow"></p>
-                      <p class="mainprize-text"></p>
-                    </div>
-                    <div class="carousel-slide">
-                      <div class="macbook-img">
-                        <img
-                          class="macbook-icon"
-                          loading="lazy"
-                          alt=""
-                          src="./img/kolonka.png"
-                          data-aos="zoom-in-up"
-                          data-aos-delay="150"
-                        />
-                      </div>
-                      <div class="mainprize-desc">
-                        <p class="heading-yellow"></p>
-                        <p class="mainprize-text"></p>
-                      </div>
+                    <div class="mainprize-desc">
+                      <div class="backgroundblur4"></div>
+                      <p class="heading-yellow">Смартфон Spark 20 Pro</p>
+                      <ul class="mainprize-text">
+                        <li>Процессор: MediaTek HELIO G99</li>
+                        <li>Память: оперативная 8 ГБ, встроенная 256 ГБ</li>
+                        <li>Экран: IPS FHD+, 6.78" (2460x1080)</li>
+                      </ul>
                     </div>
                   </div>
-                  
+
+                  <div class="carousel-slide">
+                    <div class="backgroundblur3"></div>
+                    <div class="mainprize-img">
+                      <img
+                        class="kolonka-icon"
+                        loading="lazy"
+                        alt=""
+                        src="./img/kolonka.png"
+                        data-aos="zoom-in-up"
+                        data-aos-delay="150"
+                      />
+                    </div>
+                    <div class="mainprize-desc">
+                      <div class="backgroundblur4"></div>
+                      <p class="heading-yellow">Умная колонка ЯНДЕКС Станция Мини</p>
+                      <ul class="mainprize-text">
+                        <li>Голосовой помощник: Алиса на YaGPT</li>
+                        <li>Радиус действия до 10 м</li>
+                        <li>Мощность: 10 Вт</li>
+                      </ul>
+                    </div>
+                  </div>
               </div>
+              <div class="buttons-container">
+              <button id="prev">
+                <img class="arrow-btn" src="./img/arrow-left.png" alt="">
+              </button>
+              <button id="next">
+                <img class="arrow-btn arrow-btn__right" src="./img/arrow-left.png" alt="">
+              </button>
+            </div>
           </div>
+      </section>
 
-            <!-- <div class="phone-img">
-              <div class="backgroundblur3"></div>
-              <img
-                class="macbook-icon"
-                loading="lazy"
-                alt=""
-                src="./img/phone.png"
-                data-aos="zoom-in-up"
-                data-aos-delay="150"
-              />
-            </div>
-            <p class="heading-yellow">Смартфон TECNO Spark</p>
-
-
-            <div class="phone-img">
-              <div class="backgroundblur3"></div>
-              <img
-                class="macbook-icon"
-                loading="lazy"
-                alt=""
-                src="./img/kolonka.png"
-                data-aos="zoom-in-up"
-                data-aos-delay="150"
-              />
-            </div>
-            <p class="heading-yellow">Колонка </p> -->
-          </section>
-
-          <section class="addcheck" id="addcheck-id">
+      <section class="addcheck" id="addcheck-id">
             <p class="heading-white addcheck-heading">Регистрация чека</p>
             <form action="" class="check-form" method="post" id="form">
 
-              <div class="alert">
+              <div class="alert" id="alert">
                 <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
                 Успешно!
               </div>
 
               <label class="check-label" for="ownerName">ФИО</label>
-              <input class="check-input" type="text" name="user_name" id="ownerName" onkeyup="validateName(document.getElementById('ownerName').value)" required>
+              <input class="check-input" type="text" name="user_name" id="ownerName" required>
               <span class="error-input"></span>
 
               <label class="check-label" for="phoneNumber">Номер телефона. Мы свяжемся с вами и сообщим о выигрыше!</label>
@@ -392,9 +382,9 @@
               
               <button id="submit-btn" class="registration-btn check-btn" disabled type="submit">Зарегистрировать чек</button>
             </form>
-          </section>
+      </section>
 
-          <section class="winners-content-wrapper" id="winners-id">
+      <section class="winners-content-wrapper" id="winners-id">
 
             <div class="heading-white" data-aos="fade-up">Победители</div>
 
@@ -404,10 +394,10 @@
                   <p class="winners-text">18.10.2024</p>
                 </div>
               </div>
-          </section>
+      </section>
 
 
-          <section class="questions-content-wrapper" id="questions-id">
+      <section class="questions-content-wrapper" id="questions-id">
             <p class="heading-white questions-heading">
               Вопросы и ответы
             </p>
@@ -418,7 +408,7 @@
                     class="arrow"
                     loading="lazy"
                     alt=""
-                    src="./public/imagebackground.svg"
+                    src="./img/imagebackground.svg"
                   />
                 </div>
                 <div class="question-description">
@@ -430,7 +420,7 @@
                   <img
                     class="arrow"
                     alt=""
-                    src="./public/imagebackground.svg"
+                    src="./img/imagebackground.svg"
                   />
                 </div>
                 <div class="question-description">
@@ -442,7 +432,7 @@
                   <img
                     class="arrow"
                     alt=""
-                    src="./public/imagebackground-2.svg"
+                    src="./img/imagebackground.svg"
                   />
                 </div>
                 <div class="question-description">
@@ -454,7 +444,7 @@
                 <img
                   class="arrow"
                   alt=""
-                  src="./public/imagebackground-2.svg"
+                  src="./img/imagebackground.svg"
                 />
               </div>
                 <div class="question-description">
@@ -467,7 +457,7 @@
                 <img
                   class="arrow"
                   alt=""
-                  src="./public/imagebackground-2.svg"
+                  src="./img/imagebackground.svg"
                 />
               </div>
                 <div class="question-description">
@@ -475,19 +465,19 @@
                 </div>
               </div>
             </div>
-          </section>
+      </section>
 
-          <footer class="footer">
+      <footer class="footer">
             <div class="footer-content">
               <div class="logo footer-logos">
-                <div class="logo-pulk">
+                <div class="logo-pulk" id="logopulk-two">
                   <img
                   class="logopulk-icon"
                   alt=""
                   src="./img/pulklogo.svg"
                 />
                 </div>
-                <div>
+                <div id="logolavka-two">
                   <img
                     class="logolavka-icon"
                     loading="lazy"
@@ -534,17 +524,17 @@
                 class="telegram-icon"
                 loading="lazy"
                 alt=""
-                src="./public/telegram@2x.png"
+                src="./img/telegram.png"
               />
             </div>
-          </footer>
+      </footer>
           
-      </main>
+    </main>
   </body>
 
-  <script src="./index.js"></script>
-  <script src="./carousel.js"></script>
-  <script src="./validation.js"></script>
+  <script src="./scripts/index.js"></script>
+  <script src="./scripts/carousel.js"></script>
+  <script src="./scripts/validation.js"></script>
   <script>
     AOS.init()
   </script>
