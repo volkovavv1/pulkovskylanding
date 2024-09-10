@@ -1,5 +1,3 @@
-import user from '../scripts/validation.js';
-
 $(document).ready(function() {
     $('.error-input').hide();
 
@@ -38,7 +36,6 @@ $(document).ready(function() {
         $('.error-input').show();
       }
 
-      let alert = $("#alert");
       let header = $(".header-navigation");
 
       $('.burger-menu').on('click', function() {
@@ -59,18 +56,5 @@ $(document).ready(function() {
         }
     });
     });
-    if (alert.hasClass('alert__good')){
-        $.ajax({
-          url: 'input.php',
-          type: 'POST',
-          data: user,
-          success: function(data){
-            $('p.out').text(data);
-         },
-          error: function(){
-          console.log('ERROR');
-          }
-       })
-      }
 })
 

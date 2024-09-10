@@ -1,5 +1,3 @@
-let user;
-
 let telegram = document.getElementById("telegram");
 let pulkovsky = document.getElementById("logopulk-one");
 let lavka = document.getElementById("logolavka-one");
@@ -59,14 +57,22 @@ const validator = (name, phone, number, date, sum) => {
 
     if (userName && userPhone && userCheckNumber && userCheckSum && userCheckDate) {
       alert.classList.add("alert__good");
-      user = {
+
+    let user = {
         "user_name" : userName,
         "phone" : userPhone,
         "receiptnumber": userCheckNumber,
         "receiptdate": userCheckDate,
         "receiptsum": userCheckSum,
       }
-      // sendToPhp(user)
+
+      for (let i; i < input.length, i++;) {
+        input[0].value = ""
+      }
+
+      for (const [key, value] of Object.entries(user)) {
+        setCookie(key, value)
+      }
     }
   }
 
@@ -109,7 +115,6 @@ const validator = (name, phone, number, date, sum) => {
       return false
     } else {
       return number
-      
     }
   }
 
@@ -135,24 +140,7 @@ const validator = (name, phone, number, date, sum) => {
     }
   }
 
-
-export default user;
-// async function sendToPhp (user) {
-//   await fetch('./input.php', {
-
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify(user)
-//   })
-//       .catch(error => {
-//         console.error("Error", error);
-//         alert.classList.add("alert__err");
-//         alert.innerText = "Ошибка сервера. Повторите попытку позднее"
-//         for (let i =0; i< input.length; i++) {
-//           input[number].classList.add("check-input__err")
-//         }
-//       });
-// }
+  function setCookie(name, value) {
+    document.cookie = `${name}=${value}; Secure`;
+  }
   

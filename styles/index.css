@@ -424,7 +424,6 @@ section {
 .promo {
   height: 57.6vw;
   background: radial-gradient(circle, rgb(166, 189, 143) 0%, rgba(130,154,107,1) 100%);
-  /* background-color: rgba(142, 162, 124); */
 }
 
 .promo-header__green {
