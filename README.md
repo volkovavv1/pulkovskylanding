@@ -7,4 +7,7 @@
   1) Open project folder in <a href="https://code.visualstudio.com/download">Visual Studio Code</a>
   2) In the terminal, run `npm install`
   3) Run `npm start` to view project in browser
-  
+
+
+Warning: do NOT use code from gh-pages branch. It's for demonstrative purposes only. Instead use main branch
+Thx
